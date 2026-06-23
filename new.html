@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORTUNE SYMBOLOGY RESEARCH CENTER — Good Times Start Here.</title>
+    <!-- Google Fonts: Playfair Display for authoritative editorial serif, Inter for precise sans copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS for utility-first layout styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for symbols and classic glyphs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        parchment: {
+                            50: '#FAF8F5',
+                            100: '#F5EFE6',
+                            200: '#E8DFD0',
+                            300: '#D2C2AA',
+                        },
+                        goldAccent: {
+                            600: '#D4AF37',
+                            700: '#C5A028',
+                            800: '#AA820A',
+                        },
+                        terracotta: {
+                            800: '#9C422D',
+                            900: '#7E3120',
+                        },
+                        coal: {
+                            800: '#2C302E',
+                            900: '#1C1F1E',
+                        },
+                        sage: {
+                            600: '#4D6B58',
+                            700: '#3D5545',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Editorial borders and styling */
+        .newspaper-double-border {
+            border: 4px double #1C1F1E;
+        }
+
+        .newspaper-double-border-gold {
+            border: 4px double #AA820A;
+        }
+
+        .drop-cap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 4.5rem;
+            float: left;
+            margin-right: 0.5rem;
+            line-height: 0.85;
+            font-weight: 900;
+            color: #AA820A;
+        }
+
+        /* Custom scrollbar matching design accents */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D2C2AA;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #AA820A;
+        }
+
+        /* Right-to-left scrolling animation for featured media logos */
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee 30s linear infinite;
+        }
+
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-parchment-50 text-coal-900 font-sans selection:bg-parchment-200 selection:text-goldAccent-800 leading-relaxed">
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919867483134" target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 border-2 border-white">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Custom elegant Toast/Notification Bar -->
+    <div id="toast-container" class="fixed top-6 right-6 z-50 flex flex-col gap-3 max-w-sm pointer-events-none"></div>
+
+    <!-- Header Structure: Optimized for Mobile Viewports -->
+    <header class="border-b-2 border-coal-900 bg-parchment-50 sticky top-0 z-40 shadow-sm">
+        <div
+            class="bg-coal-900 text-parchment-50 text-[10px] md:text-[11px] py-1 md:py-1.5 px-4 md:px-6 border-b border-goldAccent-800">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <a href="tel:9867483134"
+                    class="flex items-center gap-1.5 md:gap-2 hover:text-goldAccent-600 transition font-bold tracking-wider">
+                    <i class="fa-solid fa-phone animate-pulse text-goldAccent-600 text-[10px] md:text-xs"></i>
+                    <span>CALL US DIRECTLY: <strong
+                            class="text-white hover:text-goldAccent-700 underline tracking-wide">9867483134</strong></span>
+                </a>
+                <span class="hidden md:inline text-[9px] uppercase tracking-widest text-parchment-300">Official
+                    Scientific Vastu & Energy Scan Portal</span>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-1.5 md:py-3 flex justify-between items-center gap-2 md:gap-4">
+
+            <!-- Brand & Official Logo Section -->
+            <div class="flex items-center gap-1.5 md:gap-4 text-left">
+                <img src="fortune symbology logo (2).png" alt="Fortune Symbology Logo"
+                    onerror="this.src='https://placehold.co/80x80?text=FS'" class="h-8 md:h-16 w-auto object-contain">
+                <div>
+                    <h1
+                        class="font-serif text-sm md:text-2xl lg:text-3xl font-black tracking-tight text-coal-900 leading-none">
+                        FORTUNE SYMBOLOGY RESEARCH CENTER
+                    </h1>
+                    <p
+                        class="hidden md:block text-[10px] uppercase tracking-[0.2em] text-goldAccent-800 font-bold mt-1">
+                        Good Times Start Here.</p>
+                    <p
+                        class="block md:hidden text-[7px] uppercase tracking-widest text-goldAccent-800 font-bold leading-none mt-0.5">
+                        Good Times Start Here.</p>
+                </div>
+            </div>
+
+            <!-- Desktop Only Navigation Menu -->
+            <nav
+                class="hidden lg:flex items-center justify-center gap-5 xl:gap-6 font-serif text-xs font-semibold text-coal-900 uppercase tracking-wider">
+                <a href="#pex-scanning" class="hover:text-goldAccent-800 transition duration-200">PEXs Energy
+                    Scanning</a>
+                <a href="#scientific-premise" class="hover:text-goldAccent-800 transition duration-200">Scientific
+                    Vastu</a>
+                <a href="#vastu-analyzer" class="hover:text-goldAccent-800 transition duration-200">Spatial Grid
+                    Analyzer</a>
+                <a href="#remedy-planner" class="hover:text-goldAccent-800 transition duration-200">Book Scanning
+                    Appointment</a>
+            </nav>
+
+            <div class="flex items-center gap-1.5 md:gap-2">
+                <!-- Mobile Navigation Toggle -->
+                <button onclick="toggleMobileMenu()"
+                    class="lg:hidden p-1.5 text-coal-900 hover:text-goldAccent-800 focus:outline-none"
+                    aria-label="Toggle menu">
+                    <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+
+                <a href="#pex-scanning"
+                    class="px-2 py-1.5 sm:px-4 sm:py-2 bg-goldAccent-700 hover:bg-goldAccent-800 text-parchment-50 font-serif text-[9px] md:text-[11px] font-bold uppercase tracking-wider transition duration-300 rounded-xs shadow-xs text-center">
+                    <span class="sm:hidden">Book Scan</span>
+                    <span class="hidden sm:inline">Book Energy Scan</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden border-t border-parchment-200 bg-parchment-50 max-h-[75vh] overflow-y-auto">
+            <nav
+                class="flex flex-col p-4 space-y-3 font-serif text-xs font-semibold text-coal-900 uppercase tracking-wider">
+                <a href="#pex-scanning" onclick="toggleMobileMenu()"
+                    class="block py-2 border-b border-parchment-100 hover:text-goldAccent-800 transition">PEXs Energy
+                    Scanning</a>
+                <a href="#scientific-premise" onclick="toggleMobileMenu()"
+                    class="block py-2 border-b border-parchment-100 hover:text-goldAccent-800 transition">Scientific
+                    Vastu</a>
+                <a href="#vastu-analyzer" onclick="toggleMobileMenu()"
+                    class="block py-2 border-b border-parchment-100 hover:text-goldAccent-800 transition">Spatial Grid
+                    Analyzer</a>
+                <a href="#remedy-planner" onclick="toggleMobileMenu()"
+                    class="block py-2 border-b border-parchment-100 hover:text-goldAccent-800 transition">Book Scanning
+                    Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN EDITORIAL CONTENT -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+
+        <!-- BOOK SCANNING FORM & SCHEDULER -->
+        <section id="remedy-planner" class="mb-16 scroll-mt-24">
+            <div class="bg-parchment-100 p-8 border border-parchment-300 newspaper-double-border-gold shadow-xl">
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="text-center border-b border-parchment-300 pb-6">
+                        <span class="text-xs uppercase font-bold tracking-widest text-goldAccent-800">Part III: Schedule
+                            On-Site Home Scan</span>
+                        <h3 class="font-serif text-3xl font-black text-coal-900 mt-1">Acquire Your Personal Alignment
+                            Plan</h3>
+                        <p class="text-xs text-coal-800 mt-2">
+                            Provide your details and select your primary objective. Our senior engineer will bring the
+                            American PEXs Scanner to conduct a corner-to-corner diagnostic.
+                        </p>
+                    </div>
+
+                    <form onsubmit="handleGeneralBooking(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">Your
+                                    Full Name</label>
+                                <input type="text" id="book-name" required
+                                    class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">
+                                    Enter Email </label>
+                                <input type="email" id="book-email" required
+                                    class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">
+                                    Enter Subject</label>
+                                <input type="text" id="book-subject" required
+                                    class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">
+                                    Contact Number</label>
+                                <input type="tel" id="book-phone" required
+                                    class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800">
+                            </div>
+                        </div>
+
+
+                        <!-- Generate Blueprint Button -->
+                        <button type="submit"
+                            class="w-full py-4 bg-goldAccent-700 hover:bg-goldAccent-800 text-parchment-50 text-sm font-serif font-bold tracking-wider uppercase transition duration-300 shadow-md rounded-xs">
+                            Secure On-Site American PEXs Home Energy Scan
+                        </button>
+                    </form>
+
+                    <!-- Hidden container revealed post trigger -->
+                    <div id="blueprint-result"
+                        class="hidden border border-parchment-300 bg-parchment-50 p-6 rounded-xs transition-opacity duration-300 text-center space-y-4">
+                        <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>
+                        <h4 class="font-serif text-2xl font-bold text-coal-900">Your Booking Request is Formally
+                            Registered</h4>
+                        <p class="text-sm text-coal-800 max-w-xl mx-auto">
+                            A Senior Specialist from the <strong>Fortune Symbology Research Center</strong> will reach
+                            out to you within two hours to confirm the scanning schedule. We will coordinate bringing
+                            our calibrated American PEXs hardware directly to your property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- GENERAL BOOKING MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-coal-900/60 flex items-center justify-center p-4">
+        <div class="bg-parchment-50 rounded-xs border-4 border-goldAccent-800 p-6 max-w-md w-full relative space-y-4">
+            <button onclick="closeBookingModal()"
+                class="absolute top-4 right-4 text-coal-900 hover:text-goldAccent-800 text-lg">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <div class="text-center border-b border-parchment-300 pb-3">
+                <h4 class="font-serif text-xl font-bold text-coal-900">Secure Your Private Appointment</h4>
+                <p class="text-xs text-coal-800 mt-1" id="modal-subtitle">Fortune Symbology Consultation Booking</p>
+            </div>
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-[10px] uppercase font-bold text-coal-900 tracking-wide mb-1">Full
+                        Name</label>
+                    <input type="text" id="modal-name" required
+                        class="w-full p-2.5 bg-white border border-parchment-300 text-xs focus:ring-1 focus:ring-goldAccent-800">
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase font-bold text-coal-900 tracking-wide mb-1">Direct Phone
+                        Number</label>
+                    <input type="tel" id="modal-phone" required
+                        class="w-full p-2.5 bg-white border border-parchment-300 text-xs focus:ring-1 focus:ring-goldAccent-800">
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase font-bold text-coal-900 tracking-wide mb-1">Your Physical
+                        Location / Area</label>
+                    <input type="text" id="modal-loc" placeholder="e.g. South Mumbai" required
+                        class="w-full p-2.5 bg-white border border-parchment-300 text-xs focus:ring-1 focus:ring-goldAccent-800">
+                </div>
+                <button type="submit"
+                    class="w-full py-3 bg-goldAccent-700 hover:bg-goldAccent-800 text-parchment-50 font-serif text-xs font-bold uppercase tracking-wider transition rounded-xs">
+                    Confirm Appointment Registration
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- COMPREHENSIVE NEWSPAPER FOOTER -->
+    <footer class="bg-coal-900 text-parchment-100 pt-16 pb-12 border-t-4 border-goldAccent-700">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-coal-800">
+            <!-- Brand Column -->
+            <div class="md:col-span-4 space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="fortune symbology logo (2).png" alt="Fortune Symbology"
+                        onerror="this.src='https://placehold.co/50x50?text=FS'" class="h-10 w-auto object-contain">
+                    <h4 class="font-serif text-lg font-black text-white">FORTUNE SYMBOLOGY</h4>
+                </div>
+                <p class="text-xs text-parchment-300 leading-relaxed">
+                    Dedicated to providing scientifically grounded structural correction templates for modern
+                    residential, commercial, and industrial structures without demolition. Calibrated with the elite
+                    American PEXs Scanning diagnostics.
+                </p>
+                <div class="flex gap-4 pt-2">
+                    <a href="#" class="text-parchment-300 hover:text-white transition"><i
+                            class="fa-brands fa-square-x-twitter text-lg"></i></a>
+                    <a href="#" class="text-parchment-300 hover:text-white transition"><i
+                            class="fa-brands fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-parchment-300 hover:text-white transition"><i
+                            class="fa-brands fa-square-instagram text-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Opt-In Box -->
+            <div class="md:col-span-5 space-y-4">
+                <h5 class="font-serif text-lg font-bold text-white">Acquire Our Astrovastu Digest</h5>
+                <p class="text-xs text-parchment-300">
+                    Join over 64,000 professional home designers, civil engineers, and property owners who receive our
+                    detailed diagrams, Case Studies, and spatial geometry breakdowns on WhatsApp. Absolute science. No
+                    superstition.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <input type="tel" id="newsletter-whatsapp" placeholder="Your WhatsApp Number"
+                        class="flex-1 px-3 py-2 bg-coal-800 border border-coal-800 text-xs text-white placeholder-parchment-300/40 rounded-xs focus:outline-none focus:ring-1 focus:ring-green-500">
+                    <button onclick="subscribeWhatsApp()"
+                        class="px-5 py-2.5 bg-[#25D366] hover:bg-[#128C7E] text-white text-xs font-bold uppercase tracking-wider transition rounded-xs shadow-md flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Get Digest
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="font-serif text-lg font-bold text-white">Engineering Sectors</h5>
+                <ul class="space-y-2 text-xs text-parchment-300">
+                    <li><a href="#pex-scanning" class="hover:text-white transition">PEXs Scan Program</a></li>
+                    <li><a href="#scientific-premise" class="hover:text-white transition">The Scientific Premise</a>
+                    </li>
+                    <li><a href="#vastu-analyzer" class="hover:text-white transition">Instant Compass Audit</a></li>
+                    <li><a href="#element-matrix" class="hover:text-white transition">The Five Elements Matrix</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-parchment-300/60 gap-4">
+            <p>© 2026 FORTUNE SYMBOLOGY RESEARCH CENTER. All intellectual rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="privacy_policy.html" class="hover:text-white transition">Privacy Policy</a>
+                <a href="terms_and_conditions.html" class="hover:text-white transition">Terms and Conditions</a>
+                <a href="contact_us.html" target="_blank" class="hover:text-white transition">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-6 text-center text-[10px] text-parchment-300/40">
+            <p>This site is not a part of the Facebook Website or Facebook Inc. Additionally, This site is not endorsed
+                by Facebook in any way. Facebook is the trademark of Facebook, Inc.</p>
+        </div>
+    </footer>
+
+    <script>
+        /*************************************************************
+         * 1. MOBILE RESPONSIVE NAVIGATION CONTROLS
+         *************************************************************/
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        /*************************************************************
+         * 2. TOAST / USER NOTIFICATION UTILITY
+         *************************************************************/
+        function showNotification(title, message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `p-4 rounded-xs shadow-xl border border-parchment-300 flex flex-col gap-1 bg-parchment-50 text-coal-900 transition-all duration-300 transform translate-x-12 opacity-0 pointer-events-auto`;
+
+            let iconColor = 'text-goldAccent-800';
+            let icon = 'fa-circle-info';
+            if (type === 'success') {
+                iconColor = 'text-green-700';
+                icon = 'fa-circle-check';
+            } else if (type === 'error') {
+                iconColor = 'text-red-700';
+                icon = 'fa-circle-exclamation';
+            }
+
+            toast.innerHTML = `
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid ${icon} ${iconColor}"></i>
+                    <span class="font-serif font-bold text-sm text-coal-900">${title}</span>
+                </div>
+                <p class="text-xs text-coal-800 pl-6 leading-normal">${message}</p>
+            `;
+
+            container.appendChild(toast);
+
+            // Trigger animation frame
+            setTimeout(() => {
+                toast.classList.remove('translate-x-12', 'opacity-0');
+            }, 50);
+
+            // Self cleanup logic
+            setTimeout(() => {
+                toast.classList.add('translate-x-12', 'opacity-0');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 4500);
+        }
+
+        /*************************************************************
+         * 3. COMPASS COMPLIANCE & DEFECT PROBLEM ONLY CONFIGURATION
+         *************************************************************/
+        // Vastu Rules redesigned to STRICTLY show problems and prompt consulting
+        const vastuRules = {
+            north: {
+                Living: { score: 12.5, status: 'Ideal', problem: 'Excellent layout stability. Allows clean Pranic energy flow.' },
+                Pooja: { score: 10.0, status: 'Good', problem: 'Highly positive mental focus. Safe and aligned.' },
+                Kitchen: { score: 4.0, status: 'Moderate Defect', problem: 'Destroys cash preservation. Placing fire elements here neutralizes the direct path of wealth ingress.' },
+                Bedroom: { score: 5.0, status: 'Moderate Defect', problem: 'Blocks nervous system recovery. Causes chronic wakefulness and lethargic business decisions.' },
+                Toilet: { score: 1.0, status: 'Severe Defect', problem: 'Severe blockages. Drains away money and continuous incoming opportunities. Leads to unexpected debt.' }
+            },
+            northeast: {
+                Pooja: { score: 12.5, status: 'Ideal', problem: 'Eshanya matches spiritual pure balance. Positive mind flow.' },
+                Living: { score: 10.0, status: 'Good', problem: 'Good spatial aeration. Keep this zone clear of heavy items.' },
+                Bedroom: { score: 5.0, status: 'Mild Defect', problem: 'Induces severe over-stimulation. Keeps the occupant from achieving deep, restful sleep states.' },
+                Kitchen: { score: 2.0, status: 'Severe Defect', problem: 'Hinders cardiac and respiratory flow. Direct conflict between Agni (Fire) and Water elements.' },
+                Toilet: { score: 0.0, status: 'Catastrophic Defect', problem: 'Directly limits long-term focus, clarity, and lineage growth. Triggers chronic executive memory blocks.' }
+            },
+            east: {
+                Living: { score: 12.5, status: 'Ideal', problem: 'Perfect integration of morning ultraviolet spectrum.' },
+                Bedroom: { score: 8.0, status: 'Good', problem: 'Excellent solar connection. Refreshing energy cycles.' },
+                Toilet: { score: 2.0, status: 'Severe Defect', problem: 'Tarnishes professional and social reputation. Causes massive career roadblocks.' },
+                Kitchen: { score: 5.0, status: 'Moderate Defect', problem: 'Generates domestic arguments. High heat pressure conflicts with social alignment currents.' },
+                Pooja: { score: 10.0, status: 'Good', problem: 'Excellent alignment for devotional and meditative work.' }
+            },
+            southeast: {
+                Kitchen: { score: 12.5, status: 'Ideal', problem: 'Agni (Fire) aligns with heat. Promotes excellent metabolic health.' },
+                Living: { score: 6.0, status: 'Mild Defect', problem: 'Creates domestic tension. Triggers persistent mood swings and anxiety.' },
+                Pooja: { score: 5.0, status: 'Mild Defect', problem: 'Forces aggressive energetic currents through sacred spaces.' },
+                Toilet: { score: 3.0, status: 'Moderate Defect', problem: 'Directly drains liquid assets. Inhibits your capacity to secure urgent cash.' },
+                Bedroom: { score: 2.0, status: 'Severe Defect', problem: 'Fosters acute high blood pressure, extreme marital discord, and volatile emotional outbursts.' }
+            },
+            south: {
+                Bedroom: { score: 12.5, status: 'Ideal', problem: 'Nurtures deep physical rest, strong professional authority, and stable career paths.' },
+                Toilet: { score: 10.0, status: 'Good/Neutral', problem: 'Aligned with physical waste discharge guidelines.' },
+                Living: { score: 8.0, status: 'Mild Defect', problem: 'Limits domestic warmth. Best treated with weighted foundational furniture.' },
+                Pooja: { score: 5.0, status: 'Mild Defect', problem: 'Reduces meditative stillness unless grounded with constant low-frequency lighting.' },
+                Kitchen: { score: 6.0, status: 'Moderate Defect', problem: 'Triggers persistent operational fatigue among the home makers.' }
+            },
+            southwest: {
+                Bedroom: { score: 12.5, status: 'Ideal', problem: 'Prithvi (Earth) element grounding promotes secure leadership and continuous relationship harmony.' },
+                Toilet: { score: 1.5, status: 'Severe Defect', problem: 'Drains your core strength. Directly threatens job security, marital survival, and long-term financial saving.' },
+                Kitchen: { score: 0.5, status: 'Catastrophic Defect', problem: 'Destructive physical decay. Fosters constant severe illness, domestic instability, and fast wealth depletion.' },
+                Living: { score: 6.0, status: 'Moderate Defect', problem: 'Weakens decision-making capability. Elevates external legal concerns.' },
+                Pooja: { score: 4.0, status: 'Mild Defect', problem: 'Conflicts with traditional spiritual grounding zones.' }
+            },
+            west: {
+                Bedroom: { score: 12.5, status: 'Ideal', problem: 'Stable planetary coordinate. Aligns with consistent profits and career progression.' },
+                Living: { score: 10.0, status: 'Good', problem: 'Promotes highly beneficial logical and intellectual interactions.' },
+                Toilet: { score: 9.0, status: 'Good/Neutral', problem: 'Acceptable waste transit sector.' },
+                Pooja: { score: 6.0, status: 'Mild Defect', problem: 'Requires strict silver-metal stabilization to avoid mental restlessness.' },
+                Kitchen: { score: 5.0, status: 'Mild Defect', problem: 'Forces energetic imbalance on the domestic stove sector.' }
+            },
+            northwest: {
+                Living: { score: 12.5, status: 'Ideal', problem: 'Vayavya (Air) rules social networks and supportive external relations.' },
+                Toilet: { score: 12.5, status: 'Ideal', problem: 'Excellent placement for immediate elimination of negative thoughts.' },
+                Bedroom: { score: 10.0, status: 'Good', problem: 'Enhances cognitive agility and relationship flexibility.' },
+                Pooja: { score: 6.0, status: 'Mild Defect', problem: 'Inconsistent focus during home meditations.' },
+                Kitchen: { score: 4.0, status: 'Moderate Defect', problem: 'Fires up atmospheric air vectors, causing rapid financial exits and volatile household planning.' }
+            }
+        };
+
+        let userRegistered = false;
+
+        function openLeadModal() {
+            if (userRegistered) {
+                evaluateVastuCompliance();
+                return;
+            }
+            document.getElementById('lead-lock-overlay').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showNotification('Registration Required', 'Please fill out your researcher profile to analyze coordinates.', 'error');
+        }
+
+        function handleLeadSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('lead-name').value;
+            const location = document.getElementById('lead-location').value;
+            const phone = document.getElementById('lead-phone').value;
+
+            if (name && location && phone) {
+                userRegistered = true;
+                // Animate lock disappearance
+                const overlay = document.getElementById('lead-lock-overlay');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                }, 300);
+
+                evaluateVastuCompliance();
+                showNotification('Profile Validated', `Welcome, ${name}. Your micro-climate coordinates in ${location} are now loaded.`, 'success');
+            }
+        }
+
+        function evaluateVastuCompliance() {
+            if (!userRegistered) return;
+
+            // Read UI select values
+            const nVal = document.getElementById('sel-north').value;
+            const neVal = document.getElementById('sel-northeast').value;
+            const eVal = document.getElementById('sel-east').value;
+            const seVal = document.getElementById('sel-southeast').value;
+            const sVal = document.getElementById('sel-south').value;
+            const swVal = document.getElementById('sel-southwest').value;
+            const wVal = document.getElementById('sel-west').value;
+            const nwVal = document.getElementById('sel-northwest').value;
+
+            // Compute cumulative total (Max points = 100)
+            const ptsNorth = vastuRules.north[nVal];
+            const ptsNortheast = vastuRules.northeast[neVal];
+            const ptsEast = vastuRules.east[eVal];
+            const ptsSoutheast = vastuRules.southeast[seVal];
+            const ptsSouth = vastuRules.south[sVal];
+            const ptsSouthwest = vastuRules.southwest[swVal];
+            const ptsWest = vastuRules.west[wVal];
+            const ptsNorthwest = vastuRules.northwest[nwVal];
+
+            const score = ptsNorth.score + ptsNortheast.score + ptsEast.score + ptsSoutheast.score +
+                ptsSouth.score + ptsSouthwest.score + ptsWest.score + ptsNorthwest.score;
+
+            // Round to single integer percentage
+            const pct = Math.min(100, Math.round(score));
+
+            // Update UI Ring
+            const circle = document.getElementById('compliance-ring');
+            const radius = circle.r.baseVal.value;
+            const circumference = 2 * Math.PI * radius;
+            const offset = circumference - (pct / 100) * circumference;
+            circle.strokeDashoffset = offset;
+
+            // Update color states of the ring based on score
+            if (pct >= 85) {
+                circle.setAttribute('stroke', '#3D5545'); // Elegant Sage green
+            } else if (pct >= 60) {
+                circle.setAttribute('stroke', '#AA820A'); // Gold Accent
+            } else {
+                circle.setAttribute('stroke', '#9C422D'); // Terracotta red
+            }
+
+            // Update text elements
+            document.getElementById('txt-score').innerText = `${pct}%`;
+
+            let statusText = 'CRITICAL';
+            let statusColor = 'text-red-500';
+            if (pct >= 85) {
+                statusText = 'HARMONIZED';
+                statusColor = 'text-emerald-400';
+            } else if (pct >= 60) {
+                statusText = 'STABILIZED';
+                statusColor = 'text-amber-400';
+            }
+            const statusLabel = document.getElementById('txt-score-status');
+            statusLabel.className = `text-[9px] uppercase tracking-widest ${statusColor} mt-1 font-bold`;
+            statusLabel.innerText = statusText;
+
+            // Update Map display labels
+            document.getElementById('val-n').innerText = nVal;
+            document.getElementById('val-ne').innerText = neVal;
+            document.getElementById('val-e').innerText = eVal;
+            document.getElementById('val-se').innerText = seVal;
+            document.getElementById('val-s').innerText = sVal;
+            document.getElementById('val-sw').innerText = swVal;
+            document.getElementById('val-w').innerText = wVal;
+            document.getElementById('val-nw').innerText = nwVal;
+
+            // Highlight border status cards on the compass Rose map dynamically
+            updateRoseMapBorder('comp-n', ptsNorth.status);
+            updateRoseMapBorder('comp-ne', ptsNortheast.status);
+            updateRoseMapBorder('comp-e', ptsEast.status);
+            updateRoseMapBorder('comp-se', ptsSoutheast.status);
+            updateRoseMapBorder('comp-s', ptsSouth.status);
+            updateRoseMapBorder('comp-sw', ptsSouthwest.status);
+            updateRoseMapBorder('comp-w', ptsWest.status);
+            updateRoseMapBorder('comp-nw', ptsNorthwest.status);
+
+            // Populate only vulnerabilities/problems with CTAs (No remedies displayed)
+            const remediesContainer = document.getElementById('remedies-list');
+            remediesContainer.innerHTML = '';
+
+            const list = [
+                { dir: 'North', data: ptsNorth },
+                { dir: 'North-East', data: ptsNortheast },
+                { dir: 'East', data: ptsEast },
+                { dir: 'South-East', data: ptsSoutheast },
+                { dir: 'South', data: ptsSouth },
+                { dir: 'South-West', data: ptsSouthwest },
+                { dir: 'West', data: ptsWest },
+                { dir: 'North-West', data: ptsNorthwest }
+            ];
+
+            list.forEach(item => {
+                if (item.data.status !== 'Ideal' && item.data.status !== 'Good/Neutral') {
+                    remediesContainer.innerHTML += `
+                        <div class="p-3.5 bg-coal-800 border-l-2 border-red-500 rounded-xs mb-2 flex flex-col gap-3">
+                            <div>
+                                <div class="font-bold text-white mb-1 text-[11px] uppercase tracking-wide">
+                                    <span>${item.dir} Defect — State: ${item.data.status}</span>
+                                </div>
+                                <p class="text-parchment-200 text-xs leading-relaxed">${item.data.problem}</p>
+                            </div>
+                            <div>
+                                <a href="https://wa.me/919867483134?text=Emergency%20Scan%20for%20${item.dir}%20Zone%20Defect" target="_blank" class="inline-flex items-center px-3 py-2 bg-green-600 hover:bg-green-700 text-white font-serif text-[10px] font-bold uppercase tracking-wide rounded-xs transition shadow-sm shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-sm mr-1.5"></i> WhatsApp Us For Solution
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+
+            if (remediesContainer.innerHTML === '') {
+                remediesContainer.innerHTML = `
+                    <div class="text-center py-6 text-emerald-400">
+                        <i class="fa-solid fa-circle-check text-2xl mb-2 block"></i>
+                        <span class="font-bold text-xs uppercase tracking-widest">Ideal Spatial Integrity Achieved!</span>
+                        <p class="text-[10px] text-parchment-300 mt-1">No severe energy leaks detected in your current spatial alignment matrix.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function updateRoseMapBorder(elementId, status) {
+            const el = document.getElementById(elementId);
+            if (!el) return;
+            el.className = el.className.replace(/border-[a-z0-9\-]+/g, '').trim();
+
+            if (status === 'Ideal' || status === 'Good/Neutral') {
+                el.classList.add('border-emerald-600');
+            } else if (status === 'Good') {
+                el.classList.add('border-green-800');
+            } else if (status === 'Mild Defect' || status === 'Moderate Defect') {
+                el.classList.add('border-amber-600');
+            } else {
+                el.classList.add('border-red-700');
+            }
+        }
+
+        function resetAnalyzer() {
+            document.getElementById('sel-north').value = 'Living';
+            document.getElementById('sel-northeast').value = 'Pooja';
+            document.getElementById('sel-east').value = 'Living';
+            document.getElementById('sel-southeast').value = 'Kitchen';
+            document.getElementById('sel-south').value = 'Bedroom';
+            document.getElementById('sel-southwest').value = 'Bedroom';
+            document.getElementById('sel-west').value = 'Bedroom';
+            document.getElementById('sel-northwest').value = 'Living';
+
+            if (userRegistered) {
+                evaluateVastuCompliance();
+            } else {
+                const overlay = document.getElementById('lead-lock-overlay');
+                overlay.classList.remove('hidden', 'opacity-0');
+            }
+            showNotification('Matrix Restored', 'Grid variables returned to initial default values.');
+        }
+
+        /*************************************************************
+         * 4. FIVE ELEMENTS (PANCHA TATTVA) TAB SWITCHER DATA
+         *************************************************************/
+        const elementDetails = {
+            water: {
+                title: "Water — Jal Element (North-East Realm)",
+                desc: "Jal element governs flow, liquid expansion, career opportunities, and deep analytical clarity. When the Water element is structurally contaminated (e.g. toilet or boiler in North-East), residents struggle with financial progress and creative blocks.",
+                hazard: "Causes severe blocks in wealth flow, sudden operational stagnation, and regular business losses.",
+                icon: "fa-droplet text-blue-500",
+                color: "bg-blue-50 border-blue-200"
+            },
+            air: {
+                title: "Air — Vayu Element (North-West Realm)",
+                desc: "Vayu element coordinates physical movement, social relations, client support networks, and overall respiratory vitality. Obstructions in the Air element trigger feelings of stagnation and slow, disappointing sales loops.",
+                hazard: "Causes severe delays in loan approvals, customer retention issues, and extreme loneliness.",
+                icon: "fa-wind text-indigo-400",
+                color: "bg-indigo-50 border-indigo-200"
+            },
+            fire: {
+                title: "Fire — Agni Element (South-East Realm)",
+                desc: "Agni represents high energy, financial liquid cashflow, physical stamina, and digestion. Placing water elements (sink or bathroom) in the Southeast compromises your personal fire, draining money and physical vitality.",
+                hazard: "Fosters acute cash flow blockages, sudden machinery accidents, and constant legal notices.",
+                icon: "fa-fire text-red-500",
+                color: "bg-red-50 border-red-200"
+            },
+            earth: {
+                title: "Earth — Prithvi Element (South-West Realm)",
+                desc: "Prithvi is the element of heavy mass, grounding strength, decision-making, and relationship longevity. If the Southwest quadrant is too light or contains water bodies, structural stability fails, triggering family arguments.",
+                hazard: "Creates marital strain, high stress during leadership negotiations, and continuous executive errors.",
+                icon: "fa-hill-rockslide text-amber-800",
+                color: "bg-amber-50 border-amber-200"
+            },
+            space: {
+                title: "Space — Akasha Element (The Centroid - Brahmasthan)",
+                desc: "Akasha is the ultimate medium of cosmic transmission. It coordinates directly with the Brahmasthan (center gravity hub of the property). Placing heavy columns, massive walls, or septic chambers at the center cuts off the house’s cellular breath.",
+                hazard: "Creates systemic overall stagnation across health, career, and progeny.",
+                icon: "fa-expand text-sage-600",
+                color: "bg-green-50 border-green-200"
+            }
+        };
+
+        function switchElementTab(elementKey) {
+            const tabKeys = ['water', 'air', 'fire', 'earth', 'space'];
+            tabKeys.forEach(key => {
+                const btn = document.getElementById(`btn-tab-${key}`);
+                btn.className = "px-5 py-3 bg-parchment-100 hover:bg-parchment-200 text-coal-900 text-xs font-bold uppercase tracking-wider rounded-xs border border-parchment-300 transition-all duration-200";
+            });
+
+            const activeBtn = document.getElementById(`btn-tab-${elementKey}`);
+            activeBtn.className = "px-5 py-3 bg-goldAccent-800 text-parchment-50 text-xs font-bold uppercase tracking-wider rounded-xs shadow transition-all duration-200";
+
+            const item = elementDetails[elementKey];
+            const container = document.getElementById('element-display-container');
+            container.innerHTML = `
+                <div class="md:col-span-8 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid ${item.icon} text-3xl"></i>
+                        <h4 class="font-serif text-2xl font-bold text-coal-900">${item.title}</h4>
+                    </div>
+                    <p class="text-sm text-coal-900 leading-relaxed">${item.desc}</p>
+                    <div class="p-4 ${item.color} border rounded-xs flex flex-col gap-3">
+                        <div>
+                            <h5 class="text-xs uppercase font-bold text-red-800"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Critical Defect Risk:</h5>
+                            <p class="text-xs text-coal-800 mt-1">${item.hazard}</p>
+                        </div>
+                        <div>
+                            <a href="https://wa.me/919867483134?text=Analysis%20of%20${elementKey}%20element%20imbalance" target="_blank" class="inline-flex items-center px-3 py-2 bg-green-600 hover:bg-green-700 text-white font-serif text-[10px] font-bold uppercase tracking-wide rounded-xs transition shadow-sm shrink-0">
+                                <i class="fa-brands fa-whatsapp text-sm mr-1.5"></i> WhatsApp Us For Solution
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="w-40 h-40 border border-parchment-300 rounded-full flex items-center justify-center bg-parchment-100 shadow-sm">
+                        <i class="fa-solid ${item.icon} text-6xl opacity-30 animate-pulse"></i>
+                    </div>
+                </div>
+            `;
+
+            showNotification('Element Inspected', `Retrieved scientific diagnostics for ${item.title}`);
+        }
+
+        /*************************************************************
+         * 5. APP BOOKING AND MODAL LOGIC
+         *************************************************************/
+        let currentBookingType = "General Consultation";
+
+        function openBookingModal(type) {
+            currentBookingType = type;
+            document.getElementById('modal-subtitle').innerText = `Primary Focus: ${type}`;
+            document.getElementById('booking-modal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function handleModalSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('modal-name').value;
+            const phone = document.getElementById('modal-phone').value;
+            const loc = document.getElementById('modal-loc').value;
+
+            if (name && phone && loc) {
+                closeBookingModal();
+                showNotification('Booking Confirmed', `Hello ${name}, your booking request for '${currentBookingType}' in ${loc} is registered.`, 'success');
+
+                // Clear fields
+                document.getElementById('modal-name').value = '';
+                document.getElementById('modal-phone').value = '';
+                document.getElementById('modal-loc').value = '';
+            }
+        }
+
+        function handleGeneralBooking(event) {
+            event.preventDefault();
+            const name = document.getElementById('book-name').value;
+            const phone = document.getElementById('book-phone').value;
+
+            if (name && phone) {
+                document.getElementById('blueprint-result').classList.remove('hidden');
+                document.getElementById('blueprint-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                showNotification('Scan Requested', 'Your home energy scan has been successfully queued!', 'success');
+            }
+        }
+
+        function subscribeWhatsApp() {
+            const phoneInp = document.getElementById('newsletter-whatsapp');
+            const phone = phoneInp.value.trim();
+
+            if (!phone || phone.length < 10) {
+                showNotification('Registration Failed', 'Please provide a valid WhatsApp number.', 'error');
+                return;
+            }
+
+            showNotification('Digest Enrolled', `Success. Your number has been registered for the WhatsApp journal.`, 'success');
+            phoneInp.value = '';
+
+            setTimeout(() => {
+                window.open(`https://wa.me/919867483134?text=Please%20enroll%20my%20number%20${phone}%20for%20the%20Astrovastu%20Digest`, '_blank');
+            }, 1000);
+        }
+
+        /*************************************************************
+         * 6. WINDOW ONLOAD RUNTIME SETUP
+         *************************************************************/
+        window.onload = function () {
+            // Setup first element Tab on page load
+            switchElementTab('water');
+        };
+    </script>
+</body>
+
+</html>
