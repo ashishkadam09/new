@@ -248,17 +248,24 @@
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">
-                                    Enter Subject</label>
+                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">Enter
+                                    Subject</label>
                                 <input type="text" id="book-subject" required
                                     class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800">
                             </div>
                             <div>
-                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">
-                                    Contact Number</label>
+                                <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">Contact
+                                    Number</label>
                                 <input type="tel" id="book-phone" required
                                     class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800">
                             </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-coal-900 tracking-wide mb-1">Your
+                                Message</label>
+                            <textarea id="book-message" rows="5" required
+                                class="w-full p-3 bg-parchment-50 border border-parchment-300 rounded-xs text-xs font-semibold text-coal-900 focus:outline-none focus:ring-1 focus:ring-goldAccent-800 resize-y"></textarea>
                         </div>
 
 
@@ -831,8 +838,9 @@
             event.preventDefault();
             const name = document.getElementById('book-name').value;
             const phone = document.getElementById('book-phone').value;
+            const message = document.getElementById('book-message').value;
 
-            if (name && phone) {
+            if (name && phone && message) {
                 document.getElementById('blueprint-result').classList.remove('hidden');
                 document.getElementById('blueprint-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 showNotification('Scan Requested', 'Your home energy scan has been successfully queued!', 'success');
